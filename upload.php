@@ -35,7 +35,7 @@
 						$student = preg_replace('/\s+/', '_', $student);
 						if($file_size <= 2097152){
 							/*$file_name_new = uniqid("$username"."_",false).'.'.$file_ext;*/
-							$file_name_new = "$student"."_"."$username".".".$file_ext;
+							$file_name_new = "$username"."_"."$student".".".$file_ext;
 							$file_destination = 'upload/'.$file_name_new;
 							if(move_uploaded_file($file_tmp, $file_destination))
 							{
